@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFEFEF"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/userNameE"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg1"
+                android:hint="Name"
+                android:inputType="textPersonName"
+                android:paddingVertical="10dp"
+                android:paddingLeft="20dp" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/userLocationE"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg1"
+                android:hint="Location"
+                android:inputType="text"
+                android:paddingVertical="10dp"
+                android:paddingLeft="20dp" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/phoneNumberE"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg1"
+                android:hint="Mobile"
+                android:inputType="phone"
+                android:paddingVertical="10dp"
+                android:paddingLeft="20dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/saveDataB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg2"
+                android:elevation="@dimen/cardview_compat_inset_shadow"
+                android:text=" Submit" />
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_marginBottom="30dp"
+            android:id="@+id/viewDataT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:text="View Orders"
+            android:textColor="#2196F3"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
